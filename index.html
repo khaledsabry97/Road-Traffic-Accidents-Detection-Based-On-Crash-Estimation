@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Road Traffic Accidents Detection</title>
+    <meta name="description" content="An autonomous system for road traffic accidents detection using computer vision techniques. Explore full documentation, research paper, system architecture, framework details, dataset, installation guide, and usage instructions.">
+    <meta name="keywords" content="road traffic accidents, crash detection, computer vision, autonomous system, real-time monitoring, CCTV, vehicle detection, crash estimation">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -21,24 +23,33 @@
                 <a href="#install">Installation</a> |
                 <a href="#usage">Usage</a> |
                 <a href="#dataset">Dataset</a> |
-                <a href="#compilation">Compilation Of Crashes</a> |
-                <a href="https://github.com/khaledsabry97/Argus/issues">Request Feature</a>
+                <a href="#compilation">Crashes Compilation</a> |
+                <a href="https://github.com/khaledsabry97/Argus" target="_blank" rel="noopener">Code Repo</a>
             </div>
-            <div class="gifs" role="group" aria-label="Road Accident Detection Gifs">
-                <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1517.gif?raw=true" width="200" height="200" alt="car-crash" loading="lazy">
-                <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1518.gif?raw=true" width="200" height="200" alt="car-crash" loading="lazy">
-                <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1519.gif?raw=true" width="200" height="200" alt="car-crash" loading="lazy">
-                <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1529.gif?raw=true" width="200" height="200" alt="car-crash" loading="lazy">
-                <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1566.gif?raw=true" width="200" height="200" alt="car-crash" loading="lazy">
-                <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1522.gif?raw=true" width="200" height="200" alt="car-crash" loading="lazy">
-                <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1528.gif?raw=true" width="200" height="200" alt="car-crash" loading="lazy">
-                <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1568.gif?raw=true" width="200" height="200" alt="car-crash" loading="lazy">
+            <div class="gifs-container">
+                <div class="gifs" role="group" aria-label="Road Accident Detection Gifs">
+
+                    <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1517.gif?raw=true" width="200" height="200" alt="car crash gif" loading="lazy">
+                    <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1518.gif?raw=true" width="200" height="200" alt="car crash gif" loading="lazy">
+                    <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1519.gif?raw=true" width="200" height="200" alt="car crash gif" loading="lazy">
+                    <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1529.gif?raw=true" width="200" height="200" alt="car crash gif" loading="lazy">
+                    <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1533.gif?raw=true" width="200" height="200" alt="car crash gif" loading="lazy">
+
+                </div>
+                <div class="gifs" role="group" aria-label="Road Accident Detection Gifs">
+                    <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1566.gif?raw=true" width="200" height="200" alt="car crash gif" loading="lazy">
+                    <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1522.gif?raw=true" width="200" height="200" alt="car crash gif" loading="lazy">
+                    <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1528.gif?raw=true" width="200" height="200" alt="car crash gif" loading="lazy">
+                    <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1568.gif?raw=true" width="200" height="200" alt="car crash gif" loading="lazy">
+                    <img src="https://github.com/khaledsabry97/Argus/blob/master/Gif/1565.gif?raw=true" width="200" height="200" alt="car crash gif" loading="lazy">
+
+                </div>
             </div>
         </section>
 
         <section>
             <h2 id="IEEE-Research">IEEE Research Paper</h2>
-            <p>This paper proposes a framework to detect road accidents in real-time using generic CCTV cameras installed on roads. The framework focuses on how to achieve high performance on congested roads by introducing a new technique called track-compensated frame interpolation (TCFI) for tracking the vehicles, focuses on achieving higher accuracy by introducing a new approach for crash detection called crash estimation algorithm and focuses on how the system will deal with the massive number of CCTV cameras by dropping footages that are highly unlikely to contain an accident at an early stage and implemented the modules based on the pipelining technique. The framework is formed up of four stages; first, vehicles are detected using YOLO neural network, then tracked for several frames using MOSSE tracker, followed by a filtration process based on a new approach of crash estimation; finally, for every vehicle, we process its tracked footage through ViF descriptor then use the output as a feature vector for an SVM model that classifies accidents. The system achieves 93% accuracy with processing time beats all previous systems.</p>
+            <p>This paper proposes a framework to detect road accidents in real-time using generic CCTV cameras installed on roads. The framework focuses on achieving high performance on congested roads by introducing a new technique called track-compensated frame interpolation (TCFI) for tracking vehicles, aiming for higher accuracy through a new crash detection approach, and managing a large number of CCTV cameras efficiently.</p>
             <h4><a href="https://ieeexplore.ieee.org/document/9698968/" target="_blank" rel="noopener">Research Paper On IEEE</a></h4>
             <h3 id="IEEE-Cite">Citation</h3>
             <p class="citation">K. Sabry and M. Emad, "Road Traffic Accidents Detection Based On Crash Estimation," 2021 17th International Computer Engineering Conference (ICENCO), 2021, pp. 63-68, doi: 10.1109/ICENCO49852.2021.9698968.</p>
@@ -47,7 +58,7 @@
         <section>
             <h2 id="System-Architecture">System Architecture</h2>
             <div class="block-center">
-                <img src="https://github.com/khaledsabry97/Argus/blob/master/Images/BlockDiagram.png?raw=true" width="50%" alt="block-diagram">
+                <img src="https://github.com/khaledsabry97/Argus/blob/master/Images/BlockDiagram.png?raw=true" width="50%" alt="system architecture diagram">
             </div>
         </section>
 
@@ -55,18 +66,18 @@
             <h2>Framework Architecture</h2>
             <p>The framework consists of 4 phases; it starts with a vehicle detection phase using YOLO architecture. The second phase is the vehicle tracking using MOSSE tracker. Then the third phase is a new approach we introduce to detect crash based on crash estimation. Finally, we can consider either what remains after the third phase is a crash or start the fourth phase, crash detection using violent flow descriptor.</p>
             <div class="block-center">
-                <img src="https://github.com/khaledsabry97/Argus/blob/master/Images/framework.png?raw=true" width="50%" alt="framework-diagram">
+                <img src="https://github.com/khaledsabry97/Argus/blob/master/Images/framework.png?raw=true" width="50%" alt="framework architecture diagram">
             </div>
         </section>
 
         <section>
             <h2 id="dataset">Dataset</h2>
-            <p>We have two types of dataset</p>
+            <p>We have two types of datasets:</p>
             <ol>
-                <li>one for training the ViF descriptor and you can see it located in "dataset" folder</li>
-                <li>the other consist of video for around 20 to 120 seconds and you can see it in "videos" folder</li>
+                <li>One for training the ViF descriptor located in the "dataset" folder.</li>
+                <li>The other consists of videos ranging from 20 to 120 seconds, found in the "videos" folder.</li>
             </ol>
-            <p>when you run the cliend app you should use the second type of dataset</p> 
+            <p>When running the client app, use the second type of dataset.</p> 
         </section>
 
         <section>
@@ -85,7 +96,7 @@
         </section>
 
         <section>
-            <h2 id="Usage">Usage</h2>
+            <h2 id="usage">Usage</h2>
             <p>To run the project, use the following commands:</p>
             <ol>
                 <li>Run backend services:
@@ -100,25 +111,25 @@
 
         <section>
             <h2>How to Configure Used Modules in Project</h2>
-            <p>As the project has different settings there are hyper-parameters you need to configure to use the module you actually want. Go to file called "Constants.py" in "Argus/System/Data/Constants.py"</p>
+            <p>As the project has different settings, there are hyperparameters you need to configure to use the module you want. Go to the file called "Constants.py" in "Argus/System/Data/Constants.py"</p>
             <div class="configure-div">
                 <details>
                     <summary><b>In Detection Module</b></summary>
                     <ul>
-                        <li>Work_Detect_Files: True if you want to use already saved vehicles detected in the videos provided in the project instead of using YOLO architecture</li>
+                        <li>Work_Detect_Files: True if you want to use already saved vehicles detected in the videos provided in the project instead of using YOLO architecture.</li>
                     </ul>
                 </details>
                 <details>
                     <summary><b>In Tracking Module</b></summary>
                     <ul>
-                        <li>Work_Tracker_Type_Mosse: True if you want to use Mosse Tracker instead of Dlib Tracker</li>
-                        <li>Work_Tracker_Interpolation: True if you want to use track-compensated frame interpolation (TCFI) instead of normal tracking algorithm</li>
+                        <li>Work_Tracker_Type_Mosse: True if you want to use Mosse Tracker instead of Dlib Tracker.</li>
+                        <li>Work_Tracker_Interpolation: True if you want to use track-compensated frame interpolation (TCFI) instead of the normal tracking algorithm.</li>
                     </ul>
                 </details>
                 <details>
                     <summary><b>In Crash Module</b></summary>
                     <ul>
-                        <li>Work_Crash_Estimation_Only: True if you want to use Crash Estimation Module Only, instead of following the Crash Estimation Module with ViF Description</li>
+                        <li>Work_Crash_Estimation_Only: True if you want to use Crash Estimation Module Only, instead of following the Crash Estimation Module with ViF Description.</li>
                     </ul>
                 </details>
             </div>
@@ -132,7 +143,7 @@
                         <h3>IEEE Conference Presentation Video</h3>
                     </div>
                     <div class="videos-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rm5pcUggZzs?si=JG8qN5b0Mjnh-p29" title="IEEE Conference Presentation Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="youtube-iframe" src="https://www.youtube.com/embed/rm5pcUggZzs?si=JG8qN5b0Mjnh-p29" title="IEEE Conference Presentation Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="videos-row">
@@ -145,37 +156,33 @@
                         </ul>
                     </div>
                     <div class="videos-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8GmcOIeVAp4?si=166HeIVPMrDGVdyA" title="5 Minutes Earlier Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="youtube-iframe" src="https://www.youtube.com/embed/8GmcOIeVAp4?si=166HeIVPMrDGVdyA" title="5 Minutes Earlier Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="videos-row">
                     <div class="videos-texts">
                         <h3>The 8th Cause Of Death | Trailer #2</h3>
-                        <p>The trailer discusses the problem of road crashes and how ARGUS will help to solve this problem</p>
+                        <p>The trailer discusses the problem of road crashes and how ARGUS will help to solve this problem.</p>
                     </div>
                     <div class="videos-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nHsk8bgKjX0?si=JIFJL7WROUJsI1DB" title="The 8th Cause Of Death Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="videos-row">
-                    <div class="videos-texts">
-                        <h3>How to test video on ARGUS</h3>
-                        <p>The trailer discusses the problem of road crashes and how ARGUS will help to solve this problem</p>
-                    </div>
-                    <div class="videos-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/92DqypG8TKY?si=m9JQk5GdP7gPJZDD" title="How to test video on ARGUS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="youtube-iframe" src="https://www.youtube.com/embed/nHsk8bgKjX0?si=JIFJL7WROUJsI1DB" title="The 8th Cause Of Death Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="videos-row">
                     <div class="videos-texts">
                         <h3 id="compilation">Compilation of system output for road accident detection.</h3>
-                        <p>The video shows a compilation of road crashes which is the output of the system</p>
+                        <p>The video shows a compilation of road crashes which is the output of the system.</p>
+                        <p>you can also take a look on the system output results: 
+                            <a href="https://github.com/khaledsabry97/Argus/tree/master/Gif" target="_blank" rel="noopener">crashes detected</a>
+                        </p>
+
                     </div>
                     <div class="videos-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/R74K5aWLSLk?si=Wum0AUPYdC3H0eTR" title="Compilation of system output for road accident detection" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="youtube-iframe" src="https://www.youtube.com/embed/R74K5aWLSLk?si=Wum0AUPYdC3H0eTR" title="Compilation of system output for road accident detection" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </section>
+    </div>
 </body>
 </html>
