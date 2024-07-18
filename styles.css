@@ -1,17 +1,61 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: whitesmoke;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin: auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 100px;
+    max-width: 1700px;
+    overflow: hidden;
+    /* Ensure content does not overflow on small screens */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 30px;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.full-specifications, .links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* Ensure links wrap on smaller screens */
+    margin-bottom: 20px;
+}
+
+.gifs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.citation {
+    font-style: italic;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.block-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,15 +63,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 pre {
-    background: #333;
-    color: #fff;
-    padding: 10px;
+    background-color: #f2f2f2;
+    padding: 10px 14px;
     overflow-x: auto;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    /* Wrap long lines in code blocks */
 }
 
 code {
     background: #f4f4f4;
-    padding: 2px 4px;
+    padding: 2px 5px;
+}
+
+.configure-div {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    gap: 15px;
+}
+
+.videos-table {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.videos-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+
+.videos-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 a {
@@ -41,4 +115,25 @@ a:hover {
 
 ol {
     padding-left: 20px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: justify;
+}
+
+@media (max-width: 950px) {
+    .container {
+        margin: 0px;
+        padding: 10px;
+    }
+
+
+    .videos-row {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        align-items: center;
+        /* Center items horizontally */
+    }
 }
